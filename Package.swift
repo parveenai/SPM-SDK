@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TravelSafelyBoneshell",
-            url: "https://github.com/parveenai/SPM-SDK/TravelSafelyBoneshell.xcframework.zip",
+            url: "https://github.com/parveenai/SPM-SDK/blob/1.0.0/TravelSafelyBoneshell.xcframework.zip",
             checksum: "f7b497fd61ce79f3ee7b6b4a2847aa689f0bccfd6e4256216e5c87c018d2a15a"
         )
     ]
