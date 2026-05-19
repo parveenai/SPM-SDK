@@ -1,0 +1,238 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TravelSafelyBoneshell
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+import AVFoundation
+import AudioToolbox
+import CocoaAsyncSocket
+import CoreLocation
+import Foundation
+import MediaPlayer
+import RealmSwift
+import Swift
+import SystemConfiguration
+@_exported import TravelSafelyBoneshell
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol signalDataProtocolApi : AnyObject {
+  func storeDataProtocolApi(_ myData: Swift.String)
+  init()
+}
+@objc @_inheritsConvenienceInitializers public class APIClass : ObjectiveC.NSObject {
+  weak public var delegateApi: (any TravelSafelyBoneshell.signalDataProtocolApi)?
+  public class func AuthSignUsingToken(_ token: Swift.String, app_name: Swift.String, failure: @escaping (Swift.UInt32?, any Swift.Error, Foundation.NSError) -> (), callback: @escaping (Swift.Dictionary<Swift.String, Swift.AnyObject>) -> ())
+  public class func serviceAreaUpate(loginDict: Foundation.NSDictionary, isServiceAreaCalled: Swift.Bool)
+  @objc public func forceUpdateAnonymousID()
+  public class func AuthSignIn(_ username: Swift.String, password: Swift.String, app_name: Swift.String, failure: @escaping (Swift.UInt32?, any Swift.Error, Foundation.NSError) -> (), callback: @escaping (Swift.Dictionary<Swift.String, Swift.AnyObject>) -> ())
+  public class func startCustomThread()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol signalDataProtocolTravel : AnyObject {
+  func storeDataProtocolTravel(_ myData: Swift.String)
+  init()
+}
+@objc @_hasMissingDesignatedInitializers public class TravelSafelyThread : Foundation.Thread {
+  weak public var delegate: (any TravelSafelyBoneshell.signalDataProtocolTravel)?
+  public var threadTimer: Foundation.Timer?
+  @objc override dynamic public func main()
+  @objc deinit
+}
+public struct imageDataStored {
+}
+public protocol signalDataProtocol : AnyObject {
+  func storeDataProtocol(_ myData: Swift.String)
+  init()
+}
+@objc @_inheritsConvenienceInitializers public class StartViewController : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  weak public var delegate: (any TravelSafelyBoneshell.signalDataProtocol)?
+  public var authenticateWhenServiceAreaNotAvailable: Swift.Bool
+  @objc override dynamic public init()
+  public func switchTestOnDesk(setVal: Swift.Bool)
+  public func updateServiceAreaFromDemoSecond(_ notification: Foundation.NSDictionary)
+  public func updateServiceAreaFromFixedLocation(_ notification: Foundation.NSDictionary)
+  public func updateStaticlocationArray(_ notification: Foundation.NSDictionary)
+  public func testOnDeskSwitch()
+  public func updateLocationandCallOthers()
+  @objc public func determineUserModeAutomatically()
+  public func setLocalData(type: Swift.String)
+  public func showActionSheetToGetDeviceID()
+  public func reloadFloatingButtons()
+  public func setVehicleModeText(vehicleModeLbl: Swift.String)
+  public func stopSocketConnection()
+  public func setBottomBarButtonIcon(vehicleMode: Swift.String)
+  public func doOncePerSecond()
+  public func checkActiveSpat()
+  public func phases_onSelect()
+  @objc public func setTraficSignalsRepete()
+  public func setTrafficSignals()
+  public func travelSafelyVisibility(setVisibility: Swift.Bool)
+  public func checkPreemption()
+  @objc public func listenToServer(readData: Foundation.Data, fromUblox: Swift.Bool)
+  public func niceName()
+  public func updateServiceAreaValue()
+  @objc public func invalidTimerDuringLogout()
+  public func setuserConfig(value: Swift.Int)
+  public func motTapped()
+  public func cycTapped()
+  public func pedTapped()
+  public func clearSpatArray()
+  public func clearDeviceSpatArray()
+  public func setSpecificBeaconType(values: Swift.String...)
+  public func deviceFinderWithTSLib(deviceID: Swift.UInt32)
+  public func disconnectFromSDk()
+  public func UpdateLocationData(latitude: _LocationEssentials.CLLocationDegrees, longitude: _LocationEssentials.CLLocationDegrees, speed: Swift.Float, bearing: Swift.Float, altitude: _LocationEssentials.CLLocationDistance)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class StartViewHelper : ObjectiveC.NSObject {
+  public class func cleardata()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class Helper : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AlarmsHelper : ObjectiveC.NSObject {
+  public class func saveDeviceIdFileWhenGetAlert()
+  public class func getBearing(fromPoint: _LocationEssentials.CLLocationCoordinate2D, toPoint: _LocationEssentials.CLLocationCoordinate2D) -> Swift.Double
+  public class func degreesToRadians2(degrees: Swift.Float) -> Swift.Float
+  public class func getPassengerType(passengerType: Swift.Int8) -> Swift.String
+  public class func setSettingControll(settingName: Swift.String, setValue: Swift.Bool)
+  public class func setWWDSettingControll(settingName: Swift.String, setValue: Swift.Double)
+  public class func getAllUserDefaultDetails()
+  public class func setSettingsDefaultValAfterTSLibrary()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AuthClass : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NewLocalObject {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NewLocalDBObject {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GPSWrapper : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc override dynamic public init()
+  public func start()
+  public func getLocationFromHostApp(lat: Swift.Float, lng: Swift.Float)
+  public func modeUpdateLocation()
+  public func demoModecheck()
+  public func demoModeUnckeck()
+  public func updateLocationBackground()
+  public func demoModeSetDefalutFalse()
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [_LocationEssentials.CLLocation])
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateHeading newHeading: CoreLocation.CLHeading)
+  public func locationsFortesting()
+  @objc deinit
+}
+public class TravelSafelySDK {
+  final public let gpsWrapper: TravelSafelyBoneshell.GPSWrapper
+  final public let helperObj: TravelSafelyBoneshell.Helper
+  final public let appSingleton: TravelSafelyBoneshell.AppSingletonVariable
+  public init()
+  public func login(loaderDisplay: Swift.Bool, isFromLoginScreen: Swift.Bool, isServiceAreaCalled: Swift.Bool, isDebugApiCalled: Swift.Bool)
+  public func loginExternal(username: Swift.String, password: Swift.String, viewController: UIKit.UIViewController, isServiceAreaCalled: Swift.Bool, isSwitchToDev: Swift.Bool)
+  public func enableDemoMode()
+  public func disableDemoMode()
+  public func setPedestrianMode()
+  public func setCyclistMode()
+  public func setMotoristMode()
+  public func switchTestOnDesk(_ value: Swift.Bool)
+  public func updateServiceArea(lat: Swift.Double, lng: Swift.Double)
+  public func disconnectSocketSDK()
+  public func updateServiceAreaFromFixedLocation(_ notification: Foundation.NSDictionary)
+  public func clearSpat()
+  public func logoutTimerInvalid()
+  @objc deinit
+}
+public struct alarmAndAlertStruct {
+}
+@objc @_inheritsConvenienceInitializers public class SafetyMessageData : ObjectiveC.NSObject {
+  public var setExtended_type: Swift.Int16!
+  public var msgID: Swift.UInt8
+  public var passengerType: Swift.Int8!
+  public var msgCnt: Swift.UInt
+  public var vehicleID: Swift.Int32
+  public var secMark: Swift.Int16?
+  public var newLat: Swift.Double?
+  public var newLon: Swift.Double?
+  public var elev: Swift.Int16?
+  public var accuracy: Swift.Int32?
+  public var tempSpeed: Swift.UInt16
+  public var speed: Swift.Float?
+  public var speedCount: Swift.Int16
+  public var heading: Swift.Int16?
+  public var angle: Swift.Int8?
+  public var accelSet: Swift.Int64?
+  public var brakes: Swift.Int16?
+  public var size: Swift.Int16?
+  public var recievedData: [Swift.UInt8]
+  public var receivedTime: Foundation.Date?
+  public var movementState: Swift.String?
+  public var distance: Swift.Double?
+  public var missDistance: Swift.Float?
+  public var alarmsAndAlerts: TravelSafelyBoneshell.alarmAndAlertStruct
+  public func initWithArray(recievedArray: [Swift.UInt8]) -> TravelSafelyBoneshell.SafetyMessageData
+  public func basicSafetyMessageData()
+  public func checkForEmergencyVehicleAsPassengerType()
+  public func personalSafetyMessage()
+  public func convertToBytes(fromVal: Swift.Int, toVal: Swift.Int) -> Foundation.Data
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AutoDetectVehicleAlgorithm : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didReceiveMemoryWarning()
+  @_Concurrency.MainActor @preconcurrency public func calculateVehicleType(previousVal: Swift.String, averageSpeed: Swift.Float) -> (selectedMode: Swift.String, buttonTag: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func clearCountDownTime()
+  @_Concurrency.MainActor @preconcurrency public func startCountDownTimer()
+  @objc @_Concurrency.MainActor @preconcurrency public func incrementTimerVal()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AppSingletonVariable : ObjectiveC.NSObject {
+  public var deviceID: Swift.Int32
+  public var isAccessibleMode: Swift.Bool
+  public var taskarray: [Foundation.URLSessionDataTask]
+  public var loginLat: Swift.Float
+  public var loginLong: Swift.Float
+  public var debugEnable: Swift.Bool
+  public var proModeEnable: Swift.Bool
+  public var alertString: Swift.String
+  public var isAlarm: Swift.Bool
+  public var cityName: Swift.String
+  public var startVC: TravelSafelyBoneshell.StartViewController
+  public var laneMapDataArray: Foundation.NSMutableArray
+  public var deviceString: Swift.String
+  public var laneString: Swift.String
+  public var locateDeviceLatitude: Swift.Double?
+  public var locateDeviceLongitude: Swift.Double?
+  public var deviceIdLocate: Swift.Int?
+  public var isConnected: Swift.Bool
+  public class var sharedInstance: TravelSafelyBoneshell.AppSingletonVariable {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct BufferQueue<T> {
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var count: Swift.Int {
+    get
+  }
+  public mutating func enqueue(_ element: T)
+  public mutating func dequeue() -> T?
+  public var front: T? {
+    get
+  }
+}
