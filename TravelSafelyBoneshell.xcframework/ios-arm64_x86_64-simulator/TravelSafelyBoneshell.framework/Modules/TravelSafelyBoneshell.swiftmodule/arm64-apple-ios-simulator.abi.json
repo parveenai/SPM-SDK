@@ -2215,8 +2215,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TravelSafelyBoneshell19StartViewControllerC21setSpecificBeaconType6valuesySSd_tF",
-            "mangledName": "$s21TravelSafelyBoneshell19StartViewControllerC21setSpecificBeaconType6valuesySSd_tF",
+            "usr": "s:21TravelSafelyBoneshell19StartViewControllerC21setSpecificBeaconType6valuesySaySSG_tF",
+            "mangledName": "$s21TravelSafelyBoneshell19StartViewControllerC21setSpecificBeaconType6valuesySaySSG_tF",
             "moduleName": "TravelSafelyBoneshell",
             "declAttributes": [
               "AccessControl",
@@ -3941,6 +3941,13 @@
         "moduleName": "TravelSafelyBoneshell"
       },
       {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "TravelSafelyBoneshell"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TravelSafelySDK",
         "printedName": "TravelSafelySDK",
@@ -4450,6 +4457,294 @@
             "declKind": "Func",
             "usr": "s:21TravelSafelyBoneshell0aB3SDKC18logoutTimerInvalidyyF",
             "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC18logoutTimerInvalidyyF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "UpdateLocationData",
+            "printedName": "UpdateLocationData(latitude:longitude:speed:bearing:altitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC18UpdateLocationData8latitude9longitude5speed7bearing8altitudeySd_SdS2fSdtF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC18UpdateLocationData8latitude9longitude5speed7bearing8altitudeySd_SdS2fSdtF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setuserConfig",
+            "printedName": "setuserConfig(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC13setuserConfig5valueySi_tF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC13setuserConfig5valueySi_tF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWWDSettingControll",
+            "printedName": "setWWDSettingControll(settingName:setValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC21setWWDSettingControll11settingName0E5ValueySS_SdtF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC21setWWDSettingControll11settingName0E5ValueySS_SdtF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSpecificBeaconType",
+            "printedName": "setSpecificBeaconType(values:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC21setSpecificBeaconType6valuesySSd_tF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC21setSpecificBeaconType6valuesySSd_tF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSettingControll",
+            "printedName": "setSettingControll(settingName:setValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC18setSettingControll11settingName0E5ValueySS_SbtF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC18setSettingControll11settingName0E5ValueySS_SbtF",
+            "moduleName": "TravelSafelyBoneshell",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "AuthSignIn",
+            "printedName": "AuthSignIn(_:password:app_name:failure:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UInt32?, any Swift.Error, Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.UInt32?, any Swift.Error, Foundation.NSError)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UInt32?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt32",
+                            "printedName": "Swift.UInt32",
+                            "usr": "s:s6UInt32V"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : AnyObject]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : AnyObject]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TravelSafelyBoneshell0aB3SDKC10AuthSignIn_8password8app_name7failure8callbackySS_S2Sys6UInt32VSg_s5Error_pSo7NSErrorCtcySDySSyXlGctF",
+            "mangledName": "$s21TravelSafelyBoneshell0aB3SDKC10AuthSignIn_8password8app_name7failure8callbackySS_S2Sys6UInt32VSg_s5Error_pSo7NSErrorCtcySDySSyXlGctF",
             "moduleName": "TravelSafelyBoneshell",
             "declAttributes": [
               "AccessControl"

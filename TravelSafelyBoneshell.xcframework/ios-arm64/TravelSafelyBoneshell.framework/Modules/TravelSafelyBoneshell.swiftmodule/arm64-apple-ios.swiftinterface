@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TravelSafelyBoneshell
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AVFoundation
 import AudioToolbox
 import CocoaAsyncSocket
@@ -80,7 +80,7 @@ public protocol signalDataProtocol : AnyObject {
   public func pedTapped()
   public func clearSpatArray()
   public func clearDeviceSpatArray()
-  public func setSpecificBeaconType(values: Swift.String...)
+  public func setSpecificBeaconType(values: [Swift.String])
   public func deviceFinderWithTSLib(deviceID: Swift.UInt32)
   public func disconnectFromSDk()
   public func UpdateLocationData(latitude: _LocationEssentials.CLLocationDegrees, longitude: _LocationEssentials.CLLocationDegrees, speed: Swift.Float, bearing: Swift.Float, altitude: _LocationEssentials.CLLocationDistance)
@@ -150,6 +150,12 @@ public class TravelSafelySDK {
   public func updateServiceAreaFromFixedLocation(_ notification: Foundation.NSDictionary)
   public func clearSpat()
   public func logoutTimerInvalid()
+  public func UpdateLocationData(latitude: _LocationEssentials.CLLocationDegrees, longitude: _LocationEssentials.CLLocationDegrees, speed: Swift.Float, bearing: Swift.Float, altitude: _LocationEssentials.CLLocationDistance)
+  public func setuserConfig(value: Swift.Int)
+  public func setWWDSettingControll(settingName: Swift.String, setValue: Swift.Double)
+  public func setSpecificBeaconType(values: Swift.String...)
+  public func setSettingControll(settingName: Swift.String, setValue: Swift.Bool)
+  public func AuthSignIn(_ username: Swift.String, password: Swift.String, app_name: Swift.String, failure: @escaping (Swift.UInt32?, any Swift.Error, Foundation.NSError) -> (), callback: @escaping (Swift.Dictionary<Swift.String, Swift.AnyObject>) -> ())
   @objc deinit
 }
 public struct alarmAndAlertStruct {
